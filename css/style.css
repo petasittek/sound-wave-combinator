@@ -1,0 +1,39 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 96vw;
+    margin: auto;
+}
+
+    .piano {
+        display: flex;
+        justify-content: space-between;
+        margin: 1em;
+    }
+
+    .piano + .piano {
+        margin-top: 0;
+    }
+
+        .piano__key {
+            margin: .5em;
+        }
+
+        .piano__key.piano__key--sharp {
+            background: #d0d0d0;
+        }
+
+    .jxgbox {
+        /*flex-grow: 1;*/
+        height: 20em;
+        width: 100%;
+        margin-bottom: 2em;
+    }
